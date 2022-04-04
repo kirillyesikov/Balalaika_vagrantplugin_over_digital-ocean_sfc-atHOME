@@ -220,8 +220,10 @@ ip link add link eth1 name eth1.200 type vlan id 200
 ip link set dev eth1.200 up
 ip addr add 172.30.20.2/24 dev eth1.200
 
+```
 Run the following commands to create virtual router
 
+```
 ip route add 172.30.10.0/24 via 172.30.20.3
 ip route add 172.30.16.0/24 via 172.30.20.3
 ip route add 172.30.17.0/24 via 172.30.20.3
