@@ -131,6 +131,7 @@ sudo apt update && apt install -y kubeadm=1.20.0-00 kubelet=1.20.0-00 kubectl=1.
 #on the Master
 ```
 kubeadm init --kubernetes-version=1.20.0 --pod-network-cidr=10.210.0.0/16 --ignore-preflight-errors=all --apiserver-advertise-address={Your DROPLET public IP}
+export KUBECONFIG=/etc/kubernetes/admin.conf
 ```
 # The below part is taken from https://github.com/akraino-edge-stack/icn-nodus
 # Eternall thank you to authors and developers
