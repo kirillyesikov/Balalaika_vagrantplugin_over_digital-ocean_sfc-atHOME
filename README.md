@@ -9,20 +9,24 @@
 
 #Create a digit ocean account, create a project and lease a droplet https://www.digitalocean.com/ . Go with Ubuntu 18.04 x64 and thank us later.
 
-
+```
 SSH into a node and let's get started
 
 sudo apt update
 
 sudo apt-get -y install python3-pip
 
-git clone https://github.com/akraino-edge-stack/icn-nodus.git (This implementation actively uses the icn-nodus github repo . Eternall thank you to the authors and developers)
+git clone https://github.com/akraino-edge-stack/icn-nodus.git 
+```
+(This implementation actively uses the icn-nodus github repo . Eternall thank you to the authors and developers)
 
 #Install KVM on Linux. Mind you "libvirt-bin" was split in two parts : libvirt-clients libvirt-daemon-system
 (https://askubuntu.com/questions/1089753/e-package-libvirt-bin-has-no-installation-candidate)  
 
+```
 sudo apt install qemu qemu-kvm libvirt-clients libvirt-daemon-system virtinst bridge-utils
 
+```
 
 #Install vagrant-libvirt plugin in Linux
 ```
