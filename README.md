@@ -38,6 +38,7 @@ vagrant plugin install vagrant-libvirt
 ```
 #Enable nested virtualazation and install the cpu-chcker
 ```
+cd icn-nodus/demo/calico-nodus-secondary-sfc-setup-II/
 ./node.sh
 ```
 
@@ -153,15 +154,15 @@ kubectl apply -f deploy/multus-daemonset.yaml
 #One of major change, we required to do for calico is to enable ip forwarding in the container network namespace. This is enabled by macro allow_ip_forwarding to true in the calico cni configuration file.
 
 ```
-nano calico.yaml
+nano /icn-nodus/deploy/calico.yaml
 
 ```
 
-#Make sure you change the ovn_subnet and ovn_gatewayip in deploy/ovn4nfv-k8s-plugin-sfc-setup-#II.yaml. Setup Network and SubnetLenas per user configuration.
+#Make sure you change the ovn_subnet and ovn_gatewayip in deploy/ovn4nfv-k8s-plugin-sfc-setup-II.yaml. Setup Network and SubnetLenas per user configuration.
 
 #In this example, we customize the ovn network as follows.
 ```
-nano ovn4nfv-k8s-plugin-sfc-setup-#II.yaml
+nano /icn-nodus/deploy/ovn4nfv-k8s-plugin-sfc-setup-II.yaml
 
 ```
 
