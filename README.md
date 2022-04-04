@@ -5,7 +5,7 @@
 *Want to experience the convenience of Cloud infrastructure provider?
 
 
-# Vagrant is not up. Well it happens :). We got you
+# Vagrant is not up. Well it happens :). We got you :+1:
 
 #Create a digit ocean account, create a project and lease a droplet https://www.digitalocean.com/ . Go with Ubuntu 18.04 x64 and thank us later.
 
