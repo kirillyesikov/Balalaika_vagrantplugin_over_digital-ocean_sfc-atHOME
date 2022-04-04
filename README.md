@@ -22,28 +22,29 @@ sudo apt install qemu qemu-kvm libvirt-clients libvirt-daemon-system virtinst br
 
 
 #Install vagrant-libvirt plugin in Linux
-
+```
 sudo apt install qemu libvirt-daemon-system libvirt-clients libxslt-dev libxml2-dev libvirt-dev zlib1g-dev ruby-dev ruby-libvirt ebtables dnsmasq-base
 
 apt install vagrant
 
 vagrant plugin install vagrant-libvirt
-
+```
 #Enable nested virtualazation and install the cpu-chcker
-
+```
 ./node.sh
-
+```
 
 #This script provisions two providers for your vagrant use (Virtualbox and libvirt) .When executing the #script please thank people who wrote it
 #change the vagrant version in the script from 2.2.14 to the most recent one (tested with 2.2.19)
-
-%vagrant_version=2.2.14
+```
+vagrant_version=2.2.14
 if ! vagrant version &>/dev/null; then
-    enable_vagrant_install=true%
-
+    enable_vagrant_install=true
+```
 #Run the setup script selecting the libvirt provider(with a -p flag) , 
+```
 ./setup.sh -p libvirt
-
+```
 #Vagrantfile (change your build file to have an updated vagrant box image or to use a differenet provider if you will , here tested with libvirt)
 
 %box = {
