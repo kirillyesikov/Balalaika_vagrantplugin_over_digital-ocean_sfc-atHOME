@@ -134,7 +134,7 @@ kubeadm init --kubernetes-version=1.20.0 --pod-network-cidr=10.210.0.0/16 --igno
 ```
 # The below part is taken from https://github.com/akraino-edge-stack/icn-nodus
 # Eternall thank you to authors and developers
-
+![](images/logo/nodus_logo.png)
 
 #Ensure the master node taint for no schedule is removed and labelled with ovn4nfv-k8s-plugin=ovn-control-plane
 ```
