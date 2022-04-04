@@ -72,7 +72,7 @@ box = {
 provider = (ENV['VAGRANT_DEFAULT_PROVIDER'] || :libvirt).to_sym
 
 ```
-#Vagrantfile uses a ```/config.default.yml``` file to define the Memory and CPU count for the VM nodes you are #spawning
+#Vagrantfile uses a ```/config.default.yml``` file to define the Memory and CPU count for the VM nodes(master minions servers) you are spawning
 ```
 require 'yaml'
 pdf = File.dirname(__FILE__) + '/config/default.yml'
