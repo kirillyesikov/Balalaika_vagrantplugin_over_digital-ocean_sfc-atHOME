@@ -88,7 +88,7 @@ vagrant up
 ```
 #verify the calico-vm-sfc-setup vm installation
 ```
-virsh console
+virsh list
 
 ```
 
