@@ -41,7 +41,7 @@ vagrant plugin install vagrant-libvirt
 ./node.sh
 ```
 
-#setup.sh script provisions two providers for your vagrant use (Virtualbox and libvirt) .When executing the #script please thank people who wrote it
+#setup.sh script provisions two providers for your vagrant use (Virtualbox and libvirt) .When executing the script please thank people who wrote it
 #change the vagrant version in the script from 2.2.14 to the most recent one (tested with 2.2.19)
 ```
 vagrant_version=2.2.14
