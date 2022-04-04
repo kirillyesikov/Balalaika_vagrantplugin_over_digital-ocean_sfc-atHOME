@@ -1,8 +1,11 @@
 # Balalaika_vagrantplugin_over_digital-ocean_sfc-atHOME
-Low RAM environment? Interested in deploying an SFC with Kubernetes at home? Want to experience the convenience of Cloud infrastructure provider?
+
+*Low RAM environment? 
+*Interested in deploying an SFC with Kubernetes at home? 
+*Want to experience the convenience of Cloud infrastructure provider?
 
 
-Vagrant is not up. Well it happens :). We got you
+# Vagrant is not up. Well it happens :). We got you
 
 #Create a digit ocean account, create a project and lease a droplet https://www.digitalocean.com/ . Go with Ubuntu 18.04 x64 and thank us later.
 
@@ -92,7 +95,7 @@ virsh net-dhcp-leases  vagrant-libvirt
 ```
 #Duplicate your droplet session and SSH into the master,minons,and tms-server (Note it's easier to ssh as a "vagrant" user with the default password "vagrant" and then execute "sudo su" for root access)
 
-#Set up a Kubernetes Cluster (Credits to Amir Ghorab for the commands below.) Below commands are executed for minons and master
+# Set up a Kubernetes Cluster (Credits to Amir Ghorab for the help.) Below commands are executed for minons and master
 ```
 sudo apt update
 sudo ufw disable
@@ -123,8 +126,8 @@ sudo apt update && apt install -y kubeadm=1.20.0-00 kubelet=1.20.0-00 kubectl=1.
 ```
 kubeadm init --kubernetes-version=1.20.0 --pod-network-cidr=10.210.0.0/16 --ignore-preflight-errors=all --apiserver-advertise-address={Your DROPLET public IP}
 ```
-#The below part is taken from https://github.com/akraino-edge-stack/icn-nodus
-#Eternall thank you to authors and devlopers
+# The below part is taken from https://github.com/akraino-edge-stack/icn-nodus
+# Eternall thank you to authors and devlopers
 
 
 #Ensure the master node taint for no schedule is removed and labelled with ovn4nfv-k8s-plugin=ovn-control-plane
@@ -169,7 +172,7 @@ kubectl apply -f deploy/ovn4nfv-k8s-plugin-sfc-setup-II.yaml
 
 ```
 #don't Forget to join the workers(minions) with kubeadm join command issued on your minion nodes
-# You can use "kubeadm token create --print-join-command" on the master to look for your join command
+You can use "kubeadm token create --print-join-command" on the master to look for your join command
 
 
 #Calico by default could pick the interfaces without internet access. If user required to access internet access. Run the following command to pick the interface that has internet access. (On master)
@@ -240,4 +243,4 @@ kubectl apply -f demo/calico-nodus-secondary-sfc-setup-II/deploy/sfc.yaml
 
 ```
 
-#Refer to https://github.com/akraino-edge-stack/icn-nodus/blob/master/demo/calico-nodus-secondary-sfc-setup-II/README.md  for Various possible testing scenarios and more SFC deployments. 
+# Refer to https://github.com/akraino-edge-stack/icn-nodus/blob/master/demo/calico-nodus-secondary-sfc-setup-II/README.md  for Various possible testing scenarios and more SFC deployments. 
