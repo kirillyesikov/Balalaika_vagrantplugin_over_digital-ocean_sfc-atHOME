@@ -133,7 +133,7 @@ sudo apt update && apt install -y kubeadm=1.20.0-00 kubelet=1.20.0-00 kubectl=1.
 kubeadm init --kubernetes-version=1.20.0 --pod-network-cidr=10.210.0.0/16 --ignore-preflight-errors=all --apiserver-advertise-address={Your DROPLET public IP}
 ```
 # The below part is taken from https://github.com/akraino-edge-stack/icn-nodus
-# Eternall thank you to authors and devlopers
+# Eternall thank you to authors and developers
 
 
 #Ensure the master node taint for no schedule is removed and labelled with ovn4nfv-k8s-plugin=ovn-control-plane
