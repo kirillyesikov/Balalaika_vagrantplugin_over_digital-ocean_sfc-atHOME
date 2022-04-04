@@ -53,7 +53,7 @@ if ! vagrant version &>/dev/null; then
 ```
 ./setup.sh -p libvirt
 ```
-!(vagrant.png)
+!(https://github.com/kirillyesikov/Balalaika_vagrantplugin_over_digital-ocean_sfc-atHOME/blob/main/vagrant.png)
 
 #Vagrantfile (change your build file to have an updated vagrant box image or to use a differenet provider if you will , here tested with libvirt)
 https://app.vagrantup.com/elastic/boxes/ubuntu-18.04-x86_64 
