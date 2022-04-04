@@ -9,9 +9,9 @@
 
 #Create a digit ocean account, create a project and lease a droplet https://www.digitalocean.com/ . Go with Ubuntu 18.04 x64 and thank us later.
 
-```
-SSH into a node and let's get started
+#SSH into a node and let's get started
 
+```
 sudo apt update
 
 sudo apt-get -y install python3-pip
