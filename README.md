@@ -18,7 +18,7 @@ sudo apt-get -y install python3-pip
 
 git clone https://github.com/akraino-edge-stack/icn-nodus.git 
 ```
-(This implementation actively uses the icn-nodus github repo . Eternall thank you to the authors and developers)
+(This implementation actively uses the icn-nodus github repo https://github.com/akraino-edge-stack/icn-nodus. Eternall thank you to the authors and developers)
 
 #Install KVM on Linux. Mind you "libvirt-bin" was split in two parts : libvirt-clients libvirt-daemon-system
 (https://askubuntu.com/questions/1089753/e-package-libvirt-bin-has-no-installation-candidate)  
@@ -99,7 +99,7 @@ virsh net-dhcp-leases  vagrant-libvirt
 ```
 #Duplicate your droplet session and SSH into the master,minons,and tms-server (Note it's easier to ssh as a "vagrant" user with the default password "vagrant" and then execute "sudo su" for root access)
 
-# Set up a Kubernetes Cluster (Credits to Amir Ghorab for the help.) Below commands are executed for minons and master
+# Set up a Kubernetes Cluster (Credits to @Amir Hoseein Ghorab for the help.) Below commands are executed for minons and master
 ```
 sudo apt update
 sudo ufw disable
