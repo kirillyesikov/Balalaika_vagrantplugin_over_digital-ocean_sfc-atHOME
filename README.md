@@ -47,6 +47,8 @@ if ! vagrant version &>/dev/null; then
 ./setup.sh -p libvirt
 ```
 #Vagrantfile (change your build file to have an updated vagrant box image or to use a differenet provider if you will , here tested with libvirt)
+https://app.vagrantup.com/elastic/boxes/ubuntu-18.04-x86_64 
+
 ```
 box = {
   :virtualbox => { :name => 'elastic/ubuntu-18.04-x86_64', :version => '20191013.0.0'},
@@ -54,7 +56,7 @@ box = {
 }
 
 ```
-https://app.vagrantup.com/elastic/boxes/ubuntu-18.04-x86_64 
+
 
 #You can (optionally) also change the provider(-p) that will be used during the vagrant build by changing this line :
 ```
