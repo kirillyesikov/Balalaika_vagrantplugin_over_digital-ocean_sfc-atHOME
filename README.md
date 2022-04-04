@@ -101,7 +101,7 @@ virsh net-dhcp-leases  vagrant-libvirt
 ```
 #Duplicate your droplet session and SSH into the master,minons,and tms-server (Note it's easier to ssh as a "vagrant" user with the default password "vagrant" and then execute "sudo su" for root access)
 
-# Set up a Kubernetes Cluster (Credits to @ nephilimboy for the help.) Below commands are executed for minons and master
+# Set up a Kubernetes Cluster (Credits to @nephilimboy for the help.) Below commands are executed for minons and master
 ```
 sudo apt update
 sudo ufw disable
